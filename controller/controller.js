@@ -56,9 +56,7 @@ angular.module('igniteApp')
     .controller('detailsController', function ($scope, shareData, $state, $window) {
         $scope.dataFromList = shareData.get();
         $scope.selectedBookTitle = shareData.category;
-
-        console.log('data', $scope.dataFromList);
-
+        //sconsole.log('data', $scope.dataFromList);
 
         $scope.getImagePath = function (booksData) {
             return booksData.formats["image/jpeg"];
