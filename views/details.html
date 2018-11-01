@@ -1,0 +1,39 @@
+<section class="row m">
+    <!-- Search box -->
+    <section class="row m box p-xs">
+        <div class="col-xs-1 p">
+            <img src="../assets/images/ic_left_arrow.png" height="35px;" data-ng-click="goToDashboard()" alt="Back icon">
+        </div>
+        <div class="input-group col-xs-11 p">
+            <input type="text" class="form-control bg-transparent searchbox" data-ng-model="search" name="search" placeholder="Search">
+        </div>
+    </section>
+
+    <!-- Category name of the book -->
+    <header class="p-sm">
+        {{ selectedBookTitle }}
+    </header>
+
+    <!-- Repeating block -->
+    <div class="text-center" data-ng-repeat="bookDetail in dataFromList | filter : search">
+        <div class="col-xs-4">
+        <div data-ng-click="openBook(bookDetail)">
+            <img ng-src ="{{getImagePath(bookDetail)}}" alt="Book Cover">
+            <header>
+                <strong>
+                    <a href="#">   
+                {{ bookDetail.title }}
+            </a>
+            </strong>
+            </header>
+            <p>
+                {{ bookDetail.authors[0].name }}
+
+            </p>
+        </div>
+    </div>
+    </div>
+    <!-- <div data-ng-if="!bookDetail.formats.hasOwnProperty('image/jpeg')">
+        <h2 class="cen">No Image available</h2>
+    </div> -->
+</section>

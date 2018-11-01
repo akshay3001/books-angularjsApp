@@ -1,0 +1,12 @@
+This project Reuqires local server for running,
+You can use either xampp or below server.
+
+
+Mandatory : Reuqires node.js installed.
+
+
+if node js is installed please do following steps:
+
+1. on root project folder run : npm i browser-sync
+2. Defualt browser will open, on default browser-sync server with port 3000.
+3. Open index.html. 

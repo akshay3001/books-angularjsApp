@@ -1,0 +1,34 @@
+/* This file contains css that the app uses.*/
+
+
+.box{
+    background-color: #5E57E7;
+}
+
+.hdr-p-xxl{
+    color: white;
+    padding: 100px;
+}
+
+/* Font Size's */
+.font-lg{
+    font-size: 45px;
+}
+
+.category{
+    background-color: #4E4BCB;
+    color: white;
+    font-size: 20px;
+    height: 50px;
+}
+
+.bg-transparent{
+    background-color: transparent !important;
+}
+
+.searchbox{
+    border-top-style: none !important;
+    border-left-style: none !important;
+    border-right-style: none !important;
+    color: white;
+}

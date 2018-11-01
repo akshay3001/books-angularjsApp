@@ -1,0 +1,19 @@
+<section class="box">
+    <header class="hdr-p-xxl">
+        <h1 class="cen font-lg text-center">
+            Gutenberg Project
+        </h1>
+    </header>
+    <nav class="p-xs" data-ng-repeat="title in titles" data-ng-click="selectedCategory(title)">
+        <section class="category row m left-cen p-sm">
+            <div class="col-xs-10 p-l-n">
+                {{ title }}
+            </div>
+            <div class="col-xs-2">
+                <span>
+                    <img src="../assets/images/ic_right_arrow.png" alt="Detials page icon">
+                </span>
+            </div>
+        </section>
+    </nav>
+</section>
