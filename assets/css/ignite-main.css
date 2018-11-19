@@ -15,6 +15,7 @@
     font-size: 45px;
 }
 
+
 .category{
     background-color: #4E4BCB;
     color: white;
@@ -31,4 +32,14 @@
     border-left-style: none !important;
     border-right-style: none !important;
     color: white;
+}
+
+/* Details */
+
+.details-hdr{
+    color: blue;
+    font-size: 20px;
+}
+.book-name{
+    color: black !important;
 }

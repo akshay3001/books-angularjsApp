@@ -10,7 +10,7 @@
     </section>
 
     <!-- Category name of the book -->
-    <header class="p-sm">
+    <header class="p-sm details-hdr">
         {{ selectedBookTitle }}
     </header>
 
@@ -18,14 +18,14 @@
     <div class="col-xs-4 text-center" data-ng-repeat="bookDetail in dataFromList | filter : search">
         <div data-ng-click="openBook(bookDetail)">
             <img class="img-responsive" ng-src="{{getImagePath(bookDetail)}}" alt="Book Cover">
-            <header>
+            <header class="p-t-xs text-initial">
                 <strong>
-                    <a href="#">   
+                    <a class="book-name" href="#">   
                         {{ bookDetail.title }}
                     </a>
                 </strong>
             </header>
-            <p>
+            <p class="text-initial">
                 {{ bookDetail.authors[0].name }}
             </p>
         </div>
