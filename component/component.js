@@ -4,7 +4,7 @@ angular.module('igniteApp')
     
     $stateProvider
         .state('dashboard', {
-            url: '/dashboard',
+            url: '/',
             templateUrl: 'views/dashboard.html',
             controller: 'igniteController'
         })
@@ -15,7 +15,7 @@ angular.module('igniteApp')
             controller: 'detailsController'
         });
 
-       $urlRouterProvider.otherwise('/dashboard'); 
+       $urlRouterProvider.otherwise('/'); 
        $locationProvider.html5Mode(true);
 }])
 
